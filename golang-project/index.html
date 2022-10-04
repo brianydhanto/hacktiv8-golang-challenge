@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+</head>
+<body>
+    <div>
+        <table>
+            {{range $value := .}}
+            <tr>
+                <td>Name</td>
+                <td>:</td>
+                <td>{{ $value.Name }}</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>:</td>
+                <td>{{ $value.Age }}</td>
+            </tr>
+            {{end}}
+        </table>
+    </div>
+</body>
+</html>
